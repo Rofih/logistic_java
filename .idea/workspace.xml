@@ -1,11 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="2b40ca26-b1e5-429d-8fef-85fe17ed2203" name="Changes" comment="" />
+    <list default="true" id="2b40ca26-b1e5-429d-8fef-85fe17ed2203" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/models/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/models/TrackingInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/repositries/Items.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/repositries/TrackingInfos.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/data/repositries/ItemsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/data/repositries/TrackingInfosTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 4
@@ -18,13 +47,135 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.Items.testThatAllItems_CanBeDeleted.executor": "Run",
+    "JUnit.Items.testThatAnItemExist.executor": "Run",
+    "JUnit.Items.testThatAnItemNotExist.executor": "Run",
+    "JUnit.Items.testThatCount_Returns_Zero.executor": "Run",
+    "JUnit.Items.testThatCount_Returns_count_.executor": "Run",
+    "JUnit.Items.testThatPackageInfo_CanUpdate.executor": "Run",
+    "JUnit.ItemsTest.executor": "Run",
+    "JUnit.ItemsTest.testThatAllItems_CanBeDeleted (1).executor": "Run",
+    "JUnit.ItemsTest.testThatCount_Returns_count_.executor": "Run",
+    "Repository.Attach.Annotations": "false",
+    "Repository.Attach.JavaDocs": "true",
+    "Repository.Attach.Sources": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
+    "create.test.in.the.same.root": "true",
+    "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "onboarding.tips.debug.path": "C:/Users/DELL USER/Desktop/untitled/src/Main.java",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="data.repositries" />
+      <recent name="data.models" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.ItemsTest.testThatAllItems_CanBeDeleted (1)">
+    <configuration name="ItemsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.repositries.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data.repositries" />
+      <option name="MAIN_CLASS_NAME" value="data.repositries.ItemsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ItemsTest.testThatAllItems_CanBeDeleted (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.repositries.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data.repositries" />
+      <option name="MAIN_CLASS_NAME" value="data.repositries.ItemsTest" />
+      <option name="METHOD_NAME" value="testThatAllItems_CanBeDeleted" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ItemsTest.testThatAnItemExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.models.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data.models.test" />
+      <option name="MAIN_CLASS_NAME" value="data.models.test.ItemsTest" />
+      <option name="METHOD_NAME" value="testThatAnItemExist" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ItemsTest.testThatAnItemNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.models.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data.models.test" />
+      <option name="MAIN_CLASS_NAME" value="data.models.test.ItemsTest" />
+      <option name="METHOD_NAME" value="testThatAnItemNotExist" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ItemsTest.testThatCount_Returns_count_" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="untitled" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.repositries.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data.repositries" />
+      <option name="MAIN_CLASS_NAME" value="data.repositries.ItemsTest" />
+      <option name="METHOD_NAME" value="testThatCount_Returns_count_" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.ItemsTest.testThatAllItems_CanBeDeleted (1)" />
+        <item itemvalue="JUnit.ItemsTest.testThatCount_Returns_count_" />
+        <item itemvalue="JUnit.ItemsTest" />
+        <item itemvalue="JUnit.ItemsTest.testThatAnItemExist" />
+        <item itemvalue="JUnit.ItemsTest.testThatAnItemNotExist" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -41,7 +192,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1738337835130</updated>
-      <workItem from="1738337836322" duration="6000" />
+      <workItem from="1738337836322" duration="30581000" />
     </task>
     <servers />
   </component>
