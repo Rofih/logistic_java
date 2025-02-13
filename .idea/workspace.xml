@@ -5,20 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b40ca26-b1e5-429d-8fef-85fe17ed2203" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/models/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/models/TrackingInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/repositries/Items.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/data/repositries/TrackingInfos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/data/repositries/ItemsTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/data/repositries/TrackingInfosTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/models/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/models/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/models/TrackingInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/models/TrackingInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repositries/Items.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repositries/Items.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/data/repositries/TrackingInfos.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/repositries/TrackingInfos.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/repositries/ItemsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/data/repositries/ItemsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/data/repositries/TrackingInfosTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/tests/data/repositries/TrackingInfosTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,9 +30,21 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 4
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Rofih"
+  }
 }]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Rofih/logistic_java.git",
+    "accountId": "37c59f45-726d-4445-9e05-bd5d88a86ff0"
+  }
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
   <component name="ProjectId" id="2sOsDOl6lzYC1ypMozUkLYrCIp8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -57,6 +63,7 @@
     "JUnit.ItemsTest.executor": "Run",
     "JUnit.ItemsTest.testThatAllItems_CanBeDeleted (1).executor": "Run",
     "JUnit.ItemsTest.testThatCount_Returns_count_.executor": "Run",
+    "JUnit.TrackingInfosTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "true",
     "Repository.Attach.Sources": "true",
@@ -66,7 +73,7 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers": "true",
     "create.test.in.the.same.root": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -86,9 +93,9 @@
       <recent name="data.models" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.ItemsTest.testThatAllItems_CanBeDeleted (1)">
+  <component name="RunManager" selected="JUnit.TrackingInfosTest">
     <configuration name="ItemsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
+      <module name="Logistics" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="data.repositries.*" />
@@ -103,7 +110,7 @@
       </method>
     </configuration>
     <configuration name="ItemsTest.testThatAllItems_CanBeDeleted (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
+      <module name="Logistics" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="data.repositries.*" />
@@ -119,7 +126,7 @@
       </method>
     </configuration>
     <configuration name="ItemsTest.testThatAnItemExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
+      <module name="Logistics" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="data.models.test.*" />
@@ -134,24 +141,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemsTest.testThatAnItemNotExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="data.models.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="data.models.test" />
-      <option name="MAIN_CLASS_NAME" value="data.models.test.ItemsTest" />
-      <option name="METHOD_NAME" value="testThatAnItemNotExist" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ItemsTest.testThatCount_Returns_count_" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="untitled" />
+      <module name="Logistics" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="data.repositries.*" />
@@ -166,13 +157,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TrackingInfosTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Logistics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="data.repositries.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="data.repositries" />
+      <option name="MAIN_CLASS_NAME" value="data.repositries.TrackingInfosTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TrackingInfosTest" />
+        <item itemvalue="JUnit.ItemsTest" />
         <item itemvalue="JUnit.ItemsTest.testThatAllItems_CanBeDeleted (1)" />
         <item itemvalue="JUnit.ItemsTest.testThatCount_Returns_count_" />
-        <item itemvalue="JUnit.ItemsTest" />
         <item itemvalue="JUnit.ItemsTest.testThatAnItemExist" />
-        <item itemvalue="JUnit.ItemsTest.testThatAnItemNotExist" />
       </list>
     </recent_temporary>
   </component>
@@ -193,6 +199,7 @@
       <option name="presentableId" value="Default" />
       <updated>1738337835130</updated>
       <workItem from="1738337836322" duration="30581000" />
+      <workItem from="1739172688029" duration="5903000" />
     </task>
     <servers />
   </component>

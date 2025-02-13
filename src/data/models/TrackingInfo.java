@@ -2,58 +2,38 @@ package data.models;
 
 import java.util.ArrayList;
 
+
 public class TrackingInfo {
-    private int trackingId = generateTrackingId();
+    private int id;
     private int itemId;
-    private String message;
-    private int counter;
-    private ArrayList<TrackingInfo> infos = new ArrayList<TrackingInfo>();
+    private String info;
 
-    public int count(){
-        return counter;
+    public TrackingInfo(int itemId, String info) {
+        this.itemId = itemId;
+        this.info = info;
     }
 
-    public TrackingInfo save(TrackingInfo info){
-        if (isNew(info)){
-            infos.add(info);
-            counter++;
-        }
+    public String getInfo() {
         return info;
-
     }
 
-    public boolean isNew(TrackingInfo info){
-        for(TrackingInfo i : infos){
-            if (i.get_trackingId() == info.get_trackingId()) return false;
-        }
-        return true;
+    public void setInfo(String info) {
+        this.info = info;
     }
 
-    private int get_trackingId() {
-        return trackingId;
+    public int getItemId() {
+        return itemId;
     }
 
-    public int generateTrackingId(){
-        int key = 0;
-        return ++key;
+    public void setItemId(int itemId) {
+        this.itemId = itemId;
     }
 
-
-    public ArrayList<TrackingInfo> getInfos() {
-        return infos;
+    public int getTrackingInfoId() {
+        return id;
     }
 
-    public void deleteAll(){
-        infos.clear();
-        counter = 0;
+    public void setTrackingInfoId(int id) {
+        this.id = id;
     }
-
-    public boolean existById(int id){
-        for(TrackingInfo info : infos){
-            if (info.get_trackingId() == id) return true;
-        }
-        return false;
-    }
-
-
 }
