@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2b40ca26-b1e5-429d-8fef-85fe17ed2203" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/repositries/ItemsInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/data/repositries/TrackingInfosInterface.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/ItemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/ItemServiceImplement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/TrackingInfoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/services/TrackingInfoServiceImplement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/services/ItemServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/services/TrackingInfoServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/models/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/models/Item.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/data/models/TrackingInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/data/models/TrackingInfo.java" afterDir="false" />
@@ -22,6 +29,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
         <option value="JUnit5 Test Class" />
       </list>
@@ -30,18 +38,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Rofih"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Rofih&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Rofih/logistic_java.git",
-    "accountId": "37c59f45-726d-4445-9e05-bd5d88a86ff0"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Rofih/logistic_java.git&quot;,
+    &quot;accountId&quot;: &quot;37c59f45-726d-4445-9e05-bd5d88a86ff0&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -54,6 +62,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Downloaded.Files.Path.Enabled": "false",
+    "JUnit.ItemServiceTest.testThatItemCan_BeCreated.executor": "Run",
     "JUnit.Items.testThatAllItems_CanBeDeleted.executor": "Run",
     "JUnit.Items.testThatAnItemExist.executor": "Run",
     "JUnit.Items.testThatAnItemNotExist.executor": "Run",
@@ -63,6 +72,8 @@
     "JUnit.ItemsTest.executor": "Run",
     "JUnit.ItemsTest.testThatAllItems_CanBeDeleted (1).executor": "Run",
     "JUnit.ItemsTest.testThatCount_Returns_count_.executor": "Run",
+    "JUnit.ItemsTest.testThatItemsCanSaveItems.executor": "Run",
+    "JUnit.TrackingInfoServiceTest.testIf_ICanCreateTrackingInfo.executor": "Run",
     "JUnit.TrackingInfosTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "true",
@@ -88,12 +99,32 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="services" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="services" />
       <recent name="data.repositries" />
       <recent name="data.models" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TrackingInfosTest">
+  <component name="RunManager" selected="JUnit.TrackingInfoServiceTest.testIf_ICanCreateTrackingInfo">
+    <configuration name="ItemServiceTest.testThatItemCan_BeCreated" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Logistics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="services.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="services" />
+      <option name="MAIN_CLASS_NAME" value="services.ItemServiceTest" />
+      <option name="METHOD_NAME" value="testThatItemCan_BeCreated" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ItemsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Logistics" />
       <extension name="coverage">
@@ -109,7 +140,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemsTest.testThatAllItems_CanBeDeleted (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ItemsTest.testThatItemsCanSaveItems" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Logistics" />
       <extension name="coverage">
         <pattern>
@@ -119,39 +150,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="data.repositries" />
       <option name="MAIN_CLASS_NAME" value="data.repositries.ItemsTest" />
-      <option name="METHOD_NAME" value="testThatAllItems_CanBeDeleted" />
+      <option name="METHOD_NAME" value="testThatItemsCanSaveItems" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ItemsTest.testThatAnItemExist" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TrackingInfoServiceTest.testIf_ICanCreateTrackingInfo" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Logistics" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="data.models.test.*" />
+          <option name="PATTERN" value="services.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="data.models.test" />
-      <option name="MAIN_CLASS_NAME" value="data.models.test.ItemsTest" />
-      <option name="METHOD_NAME" value="testThatAnItemExist" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ItemsTest.testThatCount_Returns_count_" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Logistics" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="data.repositries.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="data.repositries" />
-      <option name="MAIN_CLASS_NAME" value="data.repositries.ItemsTest" />
-      <option name="METHOD_NAME" value="testThatCount_Returns_count_" />
+      <option name="PACKAGE_NAME" value="services" />
+      <option name="MAIN_CLASS_NAME" value="services.TrackingInfoServiceTest" />
+      <option name="METHOD_NAME" value="testIf_ICanCreateTrackingInfo" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -174,11 +189,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TrackingInfoServiceTest.testIf_ICanCreateTrackingInfo" />
+        <item itemvalue="JUnit.ItemServiceTest.testThatItemCan_BeCreated" />
         <item itemvalue="JUnit.TrackingInfosTest" />
         <item itemvalue="JUnit.ItemsTest" />
-        <item itemvalue="JUnit.ItemsTest.testThatAllItems_CanBeDeleted (1)" />
-        <item itemvalue="JUnit.ItemsTest.testThatCount_Returns_count_" />
-        <item itemvalue="JUnit.ItemsTest.testThatAnItemExist" />
+        <item itemvalue="JUnit.ItemsTest.testThatItemsCanSaveItems" />
       </list>
     </recent_temporary>
   </component>
@@ -199,7 +214,8 @@
       <option name="presentableId" value="Default" />
       <updated>1738337835130</updated>
       <workItem from="1738337836322" duration="30581000" />
-      <workItem from="1739172688029" duration="5903000" />
+      <workItem from="1739172688029" duration="21893000" />
+      <workItem from="1739866499171" duration="1737000" />
     </task>
     <servers />
   </component>

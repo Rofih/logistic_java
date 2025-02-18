@@ -1,24 +1,20 @@
 package data.models;
 
-import java.util.ArrayList;
-
 
 public class TrackingInfo {
     private int id;
     private int itemId;
-    private String info;
+    private String message;
 
-    public TrackingInfo(int itemId, String info) {
-        this.itemId = itemId;
-        this.info = info;
-    }
+//
+
 
     public String getInfo() {
-        return info;
+        return message;
     }
 
-    public void setInfo(String info) {
-        this.info = info;
+    public void setInfo(String message) {
+        this.message = message;
     }
 
     public int getItemId() {

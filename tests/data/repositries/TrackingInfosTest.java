@@ -8,9 +8,10 @@ public class TrackingInfosTest {
     @Test
     public void SaveTrackingInfo() {
         TrackingInfos trackingInfos = new TrackingInfos();
-        TrackingInfo trackingInfo = new TrackingInfo(1234,"Rofih");
+        TrackingInfo trackingInfo = new TrackingInfo();
+        trackingInfo.setInfo("just left aba");
         TrackingInfo savedItem = trackingInfos.save(trackingInfo);
-        long numberOfItems = trackingInfos.count();
+        int numberOfItems = trackingInfos.count();
         assertEquals(1,numberOfItems);
         assertEquals(trackingInfo,savedItem);
     }
@@ -18,10 +19,11 @@ public class TrackingInfosTest {
     @Test
     public void FindById() {
         TrackingInfos trackingInfos = new TrackingInfos();
-        TrackingInfo trackingInfo = new TrackingInfo(1234,"Rofih");
+        TrackingInfo trackingInfo = new TrackingInfo();
+        trackingInfo.setInfo("just left aba");
         TrackingInfo savedItem = trackingInfos.save(trackingInfo);
         savedItem = trackingInfos.findById(savedItem.getTrackingInfoId());
-        long numberOfItems = trackingInfos.count();
+        int numberOfItems = trackingInfos.count();
         assertEquals(1,numberOfItems);
         assertEquals(trackingInfo,savedItem);
         assertEquals(savedItem,trackingInfos.findById(savedItem.getTrackingInfoId()));
@@ -30,7 +32,8 @@ public class TrackingInfosTest {
     @Test
     public void delete() {
         TrackingInfos trackingInfos = new TrackingInfos();
-        TrackingInfo trackingInfo = new TrackingInfo(1234,"jesse");
+        TrackingInfo trackingInfo = new TrackingInfo();
+        trackingInfo.setInfo("just left aba");
         TrackingInfo savedItem = trackingInfos.save(trackingInfo);
         trackingInfos.delete(savedItem.getTrackingInfoId());
         long numberOfItems = trackingInfos.count();
@@ -40,11 +43,13 @@ public class TrackingInfosTest {
     @Test
     public void deleteAll() {
         TrackingInfos trackingInfos = new TrackingInfos();
-        TrackingInfo trackingInfo = new TrackingInfo(1234,"Rofih");
-        TrackingInfo trackingIn = new TrackingInfo(1234,"Rofih");
-        TrackingInfo[] saveItems = trackingInfos.saveAll(trackingInfo,trackingIn);
+        TrackingInfo trackingInfo = new TrackingInfo();
+        trackingInfo.setInfo("just left aba");
+        TrackingInfo trackingInfo2 = new TrackingInfo();
+        trackingInfo.setInfo("just left aba");
+        TrackingInfo[] saveItems = trackingInfos.saveAll(trackingInfo, trackingInfo2);
         trackingInfos.deleteAll();
-        long numberOfItems = trackingInfos.count();
+        int numberOfItems = trackingInfos.count();
         assertEquals(0,numberOfItems);
 
     }
@@ -52,11 +57,13 @@ public class TrackingInfosTest {
     @Test
     public void deleteAllById() {
         TrackingInfos trackingInfos = new TrackingInfos();
-        TrackingInfo trackingInfo = new TrackingInfo(1234,"Rofih");
-        TrackingInfo trackingIn = new TrackingInfo(1234,"Rofih");
-        TrackingInfo[] saveItems = trackingInfos.saveAll(trackingInfo,trackingIn);
-        trackingInfos.deleteAllById(trackingInfo.getTrackingInfoId(),trackingIn.getTrackingInfoId());
-        long numberOfItems = trackingInfos.count();
+        TrackingInfo trackingInfo = new TrackingInfo();
+        trackingInfo.setInfo("just left aba");
+        TrackingInfo trackingInfo2 = new TrackingInfo();
+        trackingInfo.setInfo("just left aba");
+        TrackingInfo[] saveItems = trackingInfos.saveAll(trackingInfo,trackingInfo2);
+        trackingInfos.deleteAllById(trackingInfo.getTrackingInfoId(),trackingInfo2.getTrackingInfoId());
+        int numberOfItems = trackingInfos.count();
         assertEquals(0,numberOfItems);
 
     }

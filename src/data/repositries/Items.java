@@ -4,17 +4,14 @@ import data.models.Item;
 
 import java.util.ArrayList;
 
-
-
-
-
-import java.util.ArrayList;
 import java.util.List;
 
-public class Items {
+public class Items implements ItemsInterface {
     private List<Item> items = new ArrayList<>();
     private int count;
 
+
+    @Override
     public Item save(Item item) {
         if(existsById(item.getId())){
             update(item);
@@ -24,6 +21,10 @@ public class Items {
         }
         return item;
     }
+
+//    public Item save(Item item) {
+//
+//    }
     public long count() {
         return items.size();
     }
@@ -38,11 +39,15 @@ public class Items {
         return items;
     }
 
+
+    @Override
     public void update(Item item) {
         Item update = findById(item.getId());
         update = item;
     }
 
+
+    @Override
     public Item findById(int id) {
         for (Item item : items) {
             if (item.getId() == id) {
@@ -51,7 +56,9 @@ public class Items {
         }
         return null;
     }
-    public void delete(int id){
+
+    @Override
+    public void deleteById(int id){
         Item find = findById(id);
         items.remove(find);
     }
@@ -71,7 +78,7 @@ public class Items {
         boolean found = false;
         for(int id : ids){
             if(existsById(id)){
-                delete(id);
+                deleteById(id);
                 found = true;
             }
             if(!found){
@@ -80,4 +87,9 @@ public class Items {
         }
 
     }
+
+
+
+
+
 }

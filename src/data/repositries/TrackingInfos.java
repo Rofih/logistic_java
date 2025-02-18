@@ -8,10 +8,12 @@ import java.util.ArrayList;
         import java.util.ArrayList;
 import java.util.List;
 
-public class TrackingInfos {
+public class TrackingInfos implements TrackingInfosInterface{
     private List<TrackingInfo> trackingInfos = new ArrayList<>();
     private int count;
 
+
+    @Override
     public TrackingInfo save(TrackingInfo trackingInfo) {
         if(existsById(trackingInfo.getTrackingInfoId())){
             update(trackingInfo);
@@ -21,16 +23,17 @@ public class TrackingInfos {
         }
         return trackingInfo;
     }
-    public long count() {
+    public int count() {
         return trackingInfos.size();
     }
     private void generateId(TrackingInfo trackingInfo) {
         count++;
         trackingInfo.setTrackingInfoId(count);
     }
+    @Override
     public TrackingInfo[] saveAll(TrackingInfo ... trackingInfo) {
         for(TrackingInfo trackingIn : trackingInfo){
-            this.save(trackingIn);
+            save(trackingIn);
         }
         return trackingInfo;
     }
@@ -40,6 +43,7 @@ public class TrackingInfos {
         update = trackingInfo;
     }
 
+    @Override
     public TrackingInfo findById(int id) {
         for (TrackingInfo trackingInfo : trackingInfos) {
             if (trackingInfo.getTrackingInfoId() == id) {
